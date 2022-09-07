@@ -91,6 +91,7 @@ $theme-colors: (
   "middle": #1C1C1C,
   "darker": #1A1A1A,
   "gray-footer": #909090,
+  "gray-banner": #202020,
   ) !default;
 // scss-docs-end theme-colors-map
 
@@ -241,7 +242,9 @@ $variable-prefix: bs- !default;
 // The gradient which is added to components if `$enable-gradients` is `true`
 // This gradient is also added to elements with `.bg-gradient`
 // scss-docs-start variable-gradient
-$gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
+$gradient: linear-gradient(104deg, $primary, $secondary
+);
+// $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // scss-docs-end variable-gradient
 
 // Spacing
