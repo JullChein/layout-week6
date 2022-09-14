@@ -229,7 +229,7 @@ $enable-grid-classes: true !default;
 $enable-button-pointers: true !default;
 $enable-rfs: true !default;
 $enable-validation-icons: true !default;
-$enable-negative-margins: false !default;
+$enable-negative-margins: true !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities: true !default;
 
@@ -275,7 +275,9 @@ $spacers: (
   // 60px
   9: $spacer * 5,
   // 80px
-  10: $spacer * 13.5,
+  10: $spacer * 10,
+  // 160px
+  11: $spacer * 13.5,
   // 216px
   ) !default;
 
