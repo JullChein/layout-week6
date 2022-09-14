@@ -4,6 +4,11 @@
   padding: 0 12px;
 }
 
+.container-info {
+  max-width: 98%;
+  margin: 0 auto;
+}
+
 .container-box {
   max-width: 1076px;
   margin: 0 auto;
@@ -31,11 +36,16 @@
 }
 
 .bg-banner {
-  background-image: url("../images/bg_home_mobile.jpg");
+  background: center/cover url(../images/bg_home.jpg);
+  height: 680px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 336px;
+
+  @media (max-width: 768px) {
+    background: center/cover url(../images/bg_home_mobile.jpg);
+    height: 336px;
+  }
 }
 
 .square {
@@ -89,4 +99,40 @@
   background-position: center;
   height: 263px;
   opacity: .8;
+}
+
+.squareRounded {
+  display: none;
+  width: 32px;
+  height: 32px;
+
+  &-topLeft {
+    border-top: 2px solid #62DB54;
+    border-left: 2px solid #62DB54;
+    border-top-left-radius: 10px;
+  }
+
+  &-topRight {
+    border-top: 2px solid #62DB54;
+    border-right: 2px solid #62DB54;
+    border-top-right-radius: 10px;
+  }
+
+  &-bottomLeft {
+    border-bottom: 2px solid #62DB54;
+    border-left: 2px solid #62DB54;
+    border-bottom-left-radius: 10px;
+  }
+
+  &-bottomRight {
+    border-bottom: 2px solid #62DB54;
+    border-right: 2px solid #62DB54;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+.card-info:hover {
+  .squareRounded {
+    display: block;
+  }
 }
